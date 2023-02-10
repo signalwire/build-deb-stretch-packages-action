@@ -1,0 +1,6 @@
+# action.yml
+name: 'Build Deb Stretch Packages'
+description: 'Build Deb Strech packages actions'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
