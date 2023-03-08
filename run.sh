@@ -5,5 +5,5 @@ dch -b -M -v "$VERSION-$GITHUB_RUN_ID~$GITHUB_SHA~`lsb_release -cs`" --force-dis
 debuild -b -us -uc 
 ls -la ..
 
-mkdir -p $GITHUB_WORKSPACE/$OS_FAMILY
-mv ../*.deb $GITHUB_WORKSPACE/$OS_FAMILY
+mkdir -p $GITHUB_WORKSPACE
+mv ../*.deb $GITHUB_WORKSPACE
